@@ -1,0 +1,10 @@
+﻿jiwer==4.0.0
+matplotlib==3.11.2
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+pandas==3.1.0
+pillow==13.0.0
+PyWavelets==1.10.0
+rapidocr-onnxruntime==1.2.3
+scikit-image==0.26.0
+tabulate==0.10.0
