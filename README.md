@@ -15,7 +15,7 @@ The exact text is known, so no manual labelling is needed. 20 documents, seed 20
 Each document is degraded under 7 conditions (`src/imageDegradations.py`, parameters in `src/pipelineConfig.py`):
 `clean`, `blur` (Gaussian sigma 2.2), `noise` (Gaussian std 28 + 2% salt-and-pepper), `unevenLight`
 (directional brightness ramp), `lowContrast` (grey range 140-190), `skew` (3-8 degrees), and `combined`
-(blur + contrast + light + skew + noise at 40% severity).
+(blur, contrast, light and noise at 40% severity, plus a 3-8 degree skew).
 
 Limitation: synthetic data, one OCR engine. Results are not claimed to transfer to real scans.
 
@@ -109,7 +109,12 @@ Where it does not help (reported honestly):
   held-out set was used, so numbers are optimistic for the tuned stages.
 - One OCR engine (RapidOCR), synthetic documents, 20 pages per condition. CER ignores whitespace; WER does not.
 
-## 8. Team contribution
+## 8. Report and slides
+
+`docs/DIP_Project_004_Report.docx` (final report) and `docs/DIP_Project_004_Slides.pptx` (presentation).
+`docs/figures/blockDiagram.png` is the pipeline diagram used in both.
+
+## 9. Team contribution
 
 Team: Shubham Verma (23CS3052) and Digdarshan Mishra (23CS3024). Both members can explain the complete pipeline.
 

@@ -98,6 +98,8 @@ def plotStageMontage(samples, outputDir):
     for axis in axes.ravel():
         axis.set_xticks([])
         axis.set_yticks([])
+        if not axis.has_data():
+            axis.axis("off")
     plt.tight_layout()
     plt.savefig(outputDir / "pipelineStages.png", dpi=FIGURE_DPI)
     plt.close()
@@ -110,7 +112,8 @@ def plotAblation(summary, outputDir):
     ablation.sort_values().plot.barh(ax=axis)
     axis.axvline(fullCer, color="black", linestyle="--", label="all stages")
     axis.set_xlabel(f"Mean CER on '{ABLATION_CONDITION}' (leave-one-stage-out)")
-    axis.legend()
+    axis.set_ylabel("")
+    axis.legend(loc="lower right")
     plt.tight_layout()
     plt.savefig(outputDir / "ablation.png", dpi=FIGURE_DPI)
     plt.close()
