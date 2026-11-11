@@ -111,8 +111,22 @@ Where it does not help (reported honestly):
 
 ## 8. Report and slides
 
-`docs/DIP_Project_004_Report.docx` (final report) and `docs/DIP_Project_004_Slides.pptx` (presentation).
-`docs/figures/blockDiagram.png` is the pipeline diagram used in both.
+`docs/paper/ieeePaper.pdf` is the four-page IEEE conference paper (LaTeX source `docs/paper/ieeePaper.tex`).
+`docs/DIP_Project_004_Report.docx` (full report) and `docs/DIP_Project_004_Slides.pptx` (presentation).
+`docs/figures/blockDiagram.png` is the pipeline flowchart.
+
+Where each required component is covered:
+
+| Component | Location |
+|---|---|
+| Problem statement | Paper section I, README section 1 |
+| State of the art | Paper section II |
+| Methodology, flowchart, pseudocode | Paper section IV (Fig. 1, Algorithm 1) |
+| Implementation / source code | `src/`, paper section VI |
+| Dataset / data source | Paper section III, `src/syntheticInvoiceGenerator.py` |
+| Novelty / USP using DIP | Paper section V |
+| Results | Paper section VII, `outputs/` |
+| References | Paper references |
 
 ## 9. Team contribution
 
